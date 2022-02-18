@@ -247,7 +247,7 @@ bindsym --release Print exec gnome-screenshot -i
 bindsym --release $mod+Print exec gnome-screenshot -a
 
 #enable bluetooth
-# sudo dnf install blueman
+# sudo dnf install blueman-manager (apt install blueman)
 exec --no-startup-id blueman
 
 # compositor
