@@ -238,7 +238,7 @@ exec --no-startup-id ~/.dropbox-dist/dropboxd
 
 # Set wallpaper
 # To install feh: sudo dnf install feh
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/nic-y-c-raiiC47ZV7E-unsplash.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper.jpg
 
 #interactive screenshot by pressing printscreen
 bindsym --release Print exec gnome-screenshot -i 
