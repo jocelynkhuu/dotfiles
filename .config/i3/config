@@ -200,6 +200,10 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 hide_edge_borders both
 for_window [class=".*"] border pixel 1
 
+# Set inner/outer gaps
+gaps inner 5
+gaps outer 5
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
@@ -225,7 +229,8 @@ exec --no-startup-id xinput --set-prop 'ELAN0672:00 04F3:3187 Touchpad' 'libinpu
 exec --no-startup-id xinput --set-prop 'ELAN0672:00 04F3:3187 Touchpad' 'libinput Tapping Enabled' 1
 
 # set lock screen
-bindsym $mod+ctrl+l exec i3lock --color "$bg-color" & sleep 5 && xset dpms force off
+# bindsym $mod+ctrl+l exec i3lock --color "$bg-color" & sleep 5 && xset dpms force off (set color for lockscreen)
+bindsym $mod+ctrl+l exec --no-startup-id i3lock -u --image lockscreen.png & sleep 5 && xset dpms force off
 
 # set screen brightness
 # To install light: sudo dnf install light (https://github.com/haikarainen/light)
