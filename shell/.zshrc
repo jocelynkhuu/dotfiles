@@ -22,6 +22,7 @@ alias ll='ls -la'
 alias xclip='xclip -selection clipboard'
 alias obs='/home/kyoshi/appimage/Obsidian-0.13.31.AppImage &>/dev/null & disown'
 alias vpn='sudo openvpn --config ~/Documents/vpn/kyoshi.ovpn --daemon'
+alias df='df -h -x tmpfs -x squashfs'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
