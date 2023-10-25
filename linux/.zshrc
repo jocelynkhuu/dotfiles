@@ -11,6 +11,12 @@ source /home/linuxbrew/.linuxbrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 # https://github.com/Peltoche/lsd
 alias ls='lsd'
 
+#### ZSH HISTORY ####
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+
 ### Colorize commands
 alias grep='grep --color=auto'
 alias ip='ip --color=auto'
